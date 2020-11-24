@@ -1,4 +1,13 @@
 module.exports = {
+  variants: {
+    extend: {
+      backgroundColor: ['group-hover'],
+      borderColor: ['group-hover'],
+      textColor: ['group-hover'],
+      transform: ['group-hover'],
+      opacity: ['group-hover']
+    }
+  },
   theme: {
     extend: {
       inset: {

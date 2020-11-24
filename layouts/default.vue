@@ -1,6 +1,8 @@
 <template>
   <div class="h-screen overflow-hidden noise font-body">
-    <Nuxt />
+    <transition name="fade">
+      <Nuxt />
+    </transition>
   </div>
 </template>
 
@@ -37,4 +39,14 @@
     90%{transform:translate3d(6rem, -5rem, 0)}
     to{transform:translate3d(-7rem, 0, 0)}
   }
+
+  .fade-enter-active, .fade-leave-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+  }
+
+  .fade-enter, .fade-leave-to  {
+    opacity: 0;
+  }
+  
 </style>

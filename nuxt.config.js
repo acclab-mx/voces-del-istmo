@@ -32,7 +32,8 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    'nuxt-fullpage.js'
+    'nuxt-fullpage.js',
+    '@nuxt/content'
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
