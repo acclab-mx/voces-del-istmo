@@ -5,7 +5,7 @@
     <full-page ref="fullpage" :options="options" id="fullpage">
 
       <section class="section" data-header="is-dark">
-        <div class="flex items-center justify-between h-screen bg-cover bg-primary" :style="{'background-image': `url(${require('@/assets/img/bg-location.jpg')})`}">
+        <div class="flex items-center justify-between h-screen bg-cover bg-primary"  :style="{ backgroundImage: `url(${bgImage})` }">
           <div class="w-1/2 p-10 text-center">
             <span class="text-6xl font-bold text-white fadeUp" style="animation-delay:0.5s;">{{ location._id }}</span>
             <h2 class="text-4xl italic text-secondary font-display fadeUp" style="animation-delay: 0.8s;">{{ location.name }}</h2>
@@ -25,48 +25,44 @@
             <div class="flex items-center py-2 -mx-4 text-primary">
               <h3 class="flex items-center px-4 text-sm font-bold uppercase fadeUp" style="animation-delay: 0.2s;">
                 <svg class="w-6 h-6 mr-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                Centro Deportivo de Ciudad Ixtepec
+                {{ location.location }}
               </h3>
               <h3 class="flex items-center px-4 text-sm font-bold uppercase fadeUp" style="animation-delay: 0.4s;">
                 <svg class="w-6 h-6 mr-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                5 Octubre 2020
-              </h3>
-              <h3 class="flex items-center px-4 text-sm font-bold uppercase fadeUp" style="animation-delay: 0.6s;">
-                <svg class="w-6 h-6 mr-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                500 Participantes
+                {{ location.date }}
               </h3>
             </div>
           </header>
           <div class="flex items-stretch justify-between">
             <article class="w-2/3 max-w-3xl pr-10 prose fadeIn text-primary" style="animation-delay: 1s">
-              <h4 class="tracking-wider uppercase">Acerca de</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea tenetur similique quod vel perspiciatis ad labore quis nostrum voluptatem accusamus officia fugit adipisci enim accusantium dolores praesentium maiores placeat?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima culpa itaque odit! Perspiciatis accusamus veritatis possimus provident aliquid consequuntur repellendus qui ab saepe fugiat atque vero excepturi, nulla unde! Iure?. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet recusandae fuga deserunt omnis, saepe ab architecto illum, quod vel atque error temporibus odit ipsa hic quaerat aut pariatur cupiditate aliquid!</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quo reiciendis ducimus sunt qui? Ipsum obcaecati similique non aspernatur repellendus, est repudiandae aut natus at ea illo omnis rem quos!</p>
+              <h4 class="tracking-wider uppercase">Resumen</h4>
+              <div v-html="location.intro">
+              </div>
             </article>
             <aside class="flex flex-col w-1/3 fadeIn" style="animation-delay: 1.2s">
               <h3 class="mb-2 font-bold tracking-wider uppercase">Videos</h3>
-              <a class="relative inline-block w-64 mb-2 transition-all duration-75 ease-in transform bg-black rounded-lg pb-1/3 hover:shadow-2xl hover:scale-110" href="#">
-                <div class="absolute p-2 text-white transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg></div>
+              <div v-for="(video, index) in location.videos" :key="index" class="mb-2">
+                <a class="relative inline-block w-64 mb-2 transition-all duration-75 ease-in transform bg-black rounded-lg pb-1/3 hover:shadow-2xl hover:scale-110" href="#">
+                  <iframe width="100%" height="100%" class="absolute inset-0 object-cover" :src="video.url" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </a>
-              <small class="w-full lg:w-2/3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aperiam neque cum sed aut error ipsum commodi qui tempore.</small>
+                <small class="block w-full lg:w-2/3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aperiam neque cum sed aut error ipsum commodi qui tempore.</small>
+              </div>
             </aside>
           </div>
         </div>
       </section>
 
       <section class="bg-center bg-cover section bg-secondary" data-header="is-light" :style="{'background-image': `url(${require('@/assets/img/bg-entrevista.svg')})`}">
-        <div class="slide" v-for="(n, index) in 3" :key="index">
+        <div class="slide" v-for="(interview, index) in location.interviews" :key="index">
           <div class="flex items-center justify-center h-screen">
             <div class="text-center text-primary">
               <h3 class="mb-5 text-sm font-bold tracking-wider uppercase">entrevista</h3>
-              <div class="mx-auto mb-5 prose text-primary">
-                <p>Para ella, lo más importante de la consulta, en sus palabras es que: “antes, el Gobierno Federal no se acercaba a los pueblos, y es lo que está haciendo ahorita, consultando los proyectos que tiene en mano, y eso es muy importante, porque nos toman en cuenta, como comunidad, como indígenas”. Antonia se posiciona ante la cuarta transformación como una oportunidad para ver un cambio en las comunidades. Para ella, como mujer, como madre de dos hijos, las consultas son una forma de participar, aportar y hacer cosas pensando en colectivo. Nos dice que el proyecto que se está impulsando [refiriéndose al Corredor Interoceánico] es importante, sobre todo, para los jóvenes, porque mejorará la economía y habrá posibilidad de trabajo y de “hacer sus propios negocios” y “va a haber algo más para toda la comunidad”, sobre todo, que “haiga escuelas, haiga educación, haiga deporte que nos falta mucho”.</p>
+              <div class="mx-auto mb-5 prose text-primary" v-html="interview.text">
               </div>
               <div class="w-10 h-1 mx-auto my-5 bg-primary"></div>
-              <h4 class="text-xl font-bold font-display">Antonia</h4>
-              <h5 class="text-sm tracking-wider uppercase">Respresentante comunidad de Juchitán</h5>
-              <h5 class="text-sm tracking-wider uppercase">59 Años</h5>
+              <h4 class="text-xl font-bold font-display">{{ interview.name }}</h4>
+              <h5 class="text-sm tracking-wider uppercase">{{ interview.position }}</h5>
+              <h5 class="text-sm tracking-wider uppercase">{{ interview.age }}</h5>
             </div>
           </div>
         </div>
@@ -106,6 +102,11 @@
           onLeave: this.onLeave,
           afterLoad: this.afterLoad
         }
+      }
+    },
+    computed: {
+      bgImage() {
+        return require('~/assets/img/' + this.location.image)
       }
     },
     components: {

@@ -1,0 +1,30 @@
+---
+_id: 4
+image: 'uxpanapa.jpg'
+name: 'Uxpanapa'
+state: 'Veracruz'
+date: '06 de octubre'
+location: 'Centro comunitario del Municipio de Uxpanapa'
+description: 'El domingo 6 de octubre, en un Centro Comunitario del Municipio de Uxpanapa.'
+intro: '<p>Después de la creación de la presa Miguel de la Madrid en 1988, los pueblos del valle de Uxpanapa fueron desplazados y relocalizados, por lo que eso explica la diversidad de esta asamblea: ahí poblaciones de distintos orígenes conviven y mantienen lazos constantes, sobre todo, para solicitar demandas sociales. De parte de las comunidades, asistieron principalmente representantes de las Asambleas Regionales Consultivas, aunque al ser un evento abierto al público, hubo mucha presencia de ejidatarios, comuneros y familiares de los representantes.  Se contó también con representantes de los tres niveles de gobierno: federal, estatal y municipal.</p><p> La dinámica de la reunión fue de diálogo cruzado entre funcionarios y pobladores. A pesar de demandar e interrumpir en varias ocasiones, las participaciones de las personas de las comunidades fueron cordiales y en pro de llegar a acuerdos; a pesar de ello, sí hubo reclamos constantes ante la ausencia de representantes de la SEP y la Secretaría de Salud, ya que tenían peticiones concretas y no hubo servidores públicos a quién dirigirlas. Para la población local, las instituciones de gobierno forman todas parte de la misma organización y deben responder entre ellas por sus ausencias y omisiones. Después de la reunión, la representante de la Secretaría de Gobernación comentó: “para nosotros ha sido muy importante este tipo de acciones, poder tener un acercamiento a la gente es vital para continuar con nuestro trabajo y que en verdad sea productivo…”. Por su parte, el señor Hidelberto, un hombre de 57 años del Ejido Esfuerzo Nuevo dice: “nadie, ninguno habla sobre el cuidado ambiental y cuando alguien saca el tema le dan la vuelta… es importante generar un fideicomiso para el medio ambiente en la zona, nos estamos acabando todo y nadie dice ni hace nada….”. </p>'
+interviews:
+  - name: 'Hidelberto'
+    position: 'Residente de Uxpanapa'
+    age: '57 años'
+    text: 'Para el señor Hildeberto, una ausencia ha sido el tema de cuidado ambiental, y argumenta que no se está tomando en cuenta con la importancia necesaria la preservación ambiental de la zona, ni los pobladores ni los representantes lo consideran en las reuniones. Considera que el tema es evadido por las autoridades porque no tienen capacidad de respuesta. Si bien, él no es representante de la localidad, ha sugerido en diversas ocasiones que se genere un fideicomiso, que recabe fondos de la explotación de los recursos naturales por parte de las empresas, pero nadie ha tomado su propuesta seriamente.'
+  - name: 'Aldo'
+    position: 'Representante del Corredor Interoceánico'
+    age: '33 años'
+    text: 'Aldo comenta que “es una experiencia de trabajo muy diferente, todos hemos puesto de nuestra parte, unos más, unos menos, pero claro que hemos tenido retos, algunas personas no nos tenían confianza, algunos de los servidores públicos tampoco estaban muy seguros, pero son esfuerzos en conjunto”. La consulta, como ejercicio participativo y de acercamiento a las personas y las comunidades, no es una relación binaria, ni uno ni cero, más allá de aprobación o desaprobación, “desde que generamos la idea de hacer la consulta, estábamos viendo una dinámica de generar lazos con las personas, y eso era lo que queríamos y creo que lo hemos logrado”. Se trata de un proceso donde las y los servidores públicos al hacer contacto con las personas generan compromisos con su trabajo en un nivel más subjetivo. Los lazos que se han construido han resultado en que las consultas sean exitosas, ya que, además, no existe una legislación sobre las consultas indígenas y ellos están generando mecanismos para un plan de desarrollo regional, en el que el INPI ha jugado un papel esencial para el éxito de la consulta y las futuras reuniones de seguimiento.'
+  - name: 'Maricela'
+    position: 'Resdiente de Uxpanapa'
+    age: '27 años'
+    text: 'Para Maricela, las consultas “han sido muy importantes y muy interesantes, hemos aprendido mucho, porque al principio como que nosotros pedíamos y pedíamos, pero ahora es más concreto, si se necesita luz, es en tal lado, o transporte o cualquier otra cosa, es importante que la gente como yo nos involucremos en estos temas, porque muchos se van, migran y ya no están al pendiente del pueblo y aunque al principio la gente no veía el sentido porque no creía que fueran a hacer algo, pero poco a poco hemos visto que sí”. Ella considera que es vital que en estos procesos se involucre a jóvenes de las localidades y que se generen mecanismos para que las y los jóvenes continúen participando en la vida política de sus localidades aun cuando hayan migrado.'
+  - name: 'Amanda'
+    position: 'Funcionaria del gobierno federal'
+    age: '37 Años'
+    text: 'Amanda, como funcionaria de gobierno federal, comparte lo siguiente: “para nosotros ha sido muy importante este tipo de acciones, poder tener un acercamiento a la gente es vital para continuar con nuestro trabajo y que en verdad sea productivo.... las consultas y las reuniones de seguimiento deben de ser un instrumento que facilite el trabajo de los servidores públicos, porque les brinda, de primera mano, la realidad de la población que ellos deben de atender, desde las diversas dependencias. Me dio mucho gusto cuando una persona nos felicitó, uno siente que está haciendo bien su trabajo, que están habiendo resultados y eso es satisfactorio”. Ella cree que este tipo de ejercicios generan confianza, cercanía y resultados en pro de las diferentes poblaciones que participan de las reuniones, por ello, se deberían replicar en todo el país.”'
+videos:
+  - url: 'https://www.youtube.com/embed/vP02sgYrHsw'
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aperiam neque cum sed aut error ipsum commodi qui tempore.'
+---

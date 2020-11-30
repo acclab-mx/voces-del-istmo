@@ -7,26 +7,26 @@
       <p class="text-white opacity-75">Elige uno de los puntos de consulta para aprender más:</p>
     </div>
 
-    <div class="relative flex items-center justify-center" style="width: 1000px;height: 600;">
+    <div class="relative flex items-center justify-center transform scale-50 lg:scale-100" style="width: 1000px;height: 600;">
       
       <nav class="absolute inset-0">
-        <a class="location" href="/ubicaciones/ciudad-ixtepec" style="top: 35%;left: 27%;">
+        <a class="location" href="/ubicaciones/sayula-de-aleman" style="top: 35%;left: 27%;">
           <span class="name">Sayula de Alemán</span>
           <div class="line" style="width: 70px"></div>
           <span class="dot"></span>
         </a>
-        <a class="location" href="/ubicaciones/ciudad-ixtepec" style="top: 47%;left:15%; animation-delay: 0.2s;">
+        <a class="location" href="/ubicaciones/jaltepec-de-candoyac" style="top: 47%;left:15%; animation-delay: 0.2s;">
           <span class="name">Jaltepec de Candayoc</span>
           <div class="line" style="width: 110px;"></div>
           <span class="dot"></span>
         </a>
-        <a class="location" href="/ubicaciones/ciudad-ixtepec" style="top: 50%; right: 20%;animation-delay: 0.4s;">
+        <a class="location" href="/ubicaciones/uxpanapa" style="top: 50%; right: 20%;animation-delay: 0.4s;">
           <span class="dot"></span>
           <div class="line" style="width:100px;"></div>
           <span class="name">Uxpanapa</span>
           
         </a>
-        <a class="location" href="/ubicaciones/ciudad-ixtepec" style="top: 58%;left: 10%;animation-delay: 0.6s;">
+        <a class="location" href="/ubicaciones/santa-maria-chimalpa" style="top: 58%;left: 10%;animation-delay: 0.6s;">
           <span class="name">Santa María Chimalpa</span>
           <div class="line" style="width:260px;"></div>
           <span class="dot"></span>
@@ -36,12 +36,12 @@
           <div class="line" style="width: 200px;"></div>
           <span class="name">Ciudad Ixtepec</span>
         </a>
-        <a class="location" href="/ubicaciones/ciudad-ixtepec" style="top: 73%; left: 25%;animation-delay: 1s">
+        <a class="location" href="/ubicaciones/salina-cruz" style="top: 73%; left: 25%;animation-delay: 1s">
           <span class="name">Salina Cruz</span>
           <div class="line" style="width: 120px;"></div>
           <span class="dot"></span>
         </a>
-        <a class="location" href="/ubicaciones/ciudad-ixtepec" style="top: 78%; right: 15%;animation-delay: 1.2s;">
+        <a class="location" href="/ubicaciones/san-pedro-huamelula" style="top: 78%; right: 15%;animation-delay: 1.2s;">
           <span class="dot"></span>
           <div class="line" style="width: 280px;"></div>
           <span class="name">San Pedro Huamelula</span>

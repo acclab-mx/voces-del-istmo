@@ -92,32 +92,32 @@ export default {
         {
           state: 'Oaxaca',
           city: 'Santa María Chimalapa',
-          url: '/ubicaciones/ciudad-ixtepec'
+          url: '/ubicaciones/santa-maria-chimilpa'
         },
         {
           state: 'Oaxaca',
           city: 'Salina Cruz',
-          url: '/ubicaciones/ciudad-ixtepec'
+          url: '/ubicaciones/salinas-cruz'
         },
         {
           state: 'Veracruz',
           city: 'Uxpanapa',
-          url: '/ubicaciones/ciudad-ixtepec'
+          url: '/ubicaciones/uxpanapa'
         },
         {
           state: 'Oaxaca',
           city: 'San Pedro Huamelula',
-          url: '/ubicaciones/ciudad-ixtepec'
+          url: '/ubicaciones/san-pedro-huamelula'
         },
         {
           state: 'Oaxaca',
           city: 'Jaltepec de Candayoc',
-          url: '/ubicaciones/ciudad-ixtepec'
+          url: '/ubicaciones/jaltepec-de-candeyoc'
         },
         {
           state: 'Veracruz',
           city: 'Sayula de Alemán',
-          url: '/ubicaciones/ciudad-ixtepec'
+          url: '/ubicaciones/sayula-de-aleman'
         }
       ]
     }

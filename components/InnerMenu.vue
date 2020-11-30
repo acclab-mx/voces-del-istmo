@@ -20,7 +20,7 @@
         <a class="flex items-center justify-center text-white border-t border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/mapa">Mapa</a>
         <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/entrevistas">Entrevistas</a>
         <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="#">Metodología</a>
-        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="#">Conclusiones</a>
+        <a class="flex items-center justify-center text-white border-t border-b border-r border-white border-opacity-25 link hover:text-secondary font-display hover:bg-bg-opacity" href="/conclusiones">Conclusiones</a>
       </div>
     </div>
   </header>
